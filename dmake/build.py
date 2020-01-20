@@ -103,10 +103,7 @@ class Build(object):
     def tag(self):
         template_kwargs = template_args.tag_template_args()
         for push_mode, repo, tag_template in self.pushes:
-            # continue to next item if not needed
             need_push = self.need_push(push_mode)
-            if not need_push:
-                continue
 
             try:
                 tag_name = tag_template.format(**template_kwargs)
@@ -121,10 +118,7 @@ class Build(object):
     def push(self):
         template_kwargs = template_args.tag_template_args()
         for push_mode, repo, tag_template in self.pushes:
-            # continue to next item if not needed
             need_push = self.need_push(push_mode)
-            if not need_push:
-                continue
 
             try:
                 tag_name = tag_template.format(**template_kwargs)
