@@ -1,4 +1,4 @@
-FROM python:2.7.11
+FROM python:2.7.14
 
 ADD requirements.pip /tmp/
 RUN pip install -r /tmp/requirements.pip
