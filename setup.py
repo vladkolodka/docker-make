@@ -33,7 +33,7 @@ setup(
     version='1.1.7',
     author='jizhilong',
     author_email='zhilongji@gmail.com',
-    url='https://github.com/CtripCloud/docker-make',
+    url='https://github.com/vladkolodka/docker-make',
     license='Apache',
     keywords=['docker', 'image',' build'],
     packages=find_packages(exclude=['tests']),
